@@ -15,5 +15,5 @@ db.once('open', () => {
     app.listen(PORT, () => { 
         console.log('Api server running on port ${PORT!');
         console.log('cwd: ${cwd}');
-    })
-})
+    });
+});

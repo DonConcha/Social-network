@@ -1,7 +1,10 @@
 const { connect, connection } = require('mongoose');
 
-const connectString = 'mongodb://localhost:27017/NoSQL';
+const connectionString = 'mongodb://localhost:27017/NoSQL';
 
-connect(connectString,);
+connect(connectionString, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 
 module.exports = connection;
